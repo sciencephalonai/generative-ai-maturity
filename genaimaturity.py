@@ -3,6 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Set wide mode
+st.set_page_config(layout="wide")
 
 st.image('website_logo.png', width=400)
 
