@@ -70,10 +70,10 @@ with col2:
         fig, ax = plt.subplots()
         bars = ax.bar(maturity_counts.index, maturity_counts.values, color=sns.color_palette("viridis", len(maturity_counts)))
         ax.set_title("Generative AI Maturity Levels")
-        ax.set_xlabel("Maturity Level")
-        ax.set_ylabel("Count")
+        ax.set_xlabel("Maturity Level", fontweight='bold')
+        ax.set_ylabel("Count", fontweight='bold')
         ax.set_xticks(range(len(maturity_counts.index)))
-        ax.set_xticklabels(maturity_counts.index)
+        ax.set_xticklabels(maturity_counts.index, fontweight='bold')
         
         for bar in bars:
             yval = bar.get_height()
